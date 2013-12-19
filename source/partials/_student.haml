@@ -15,4 +15,4 @@
                 - elsif service.keys[0] ==  "blog" 
                   = partial "partials/blog", :locals=>{:service=>service} 
                 - elsif service.keys[0] == "portfolio"
-                  %a{:href=>"#{student.portfolio}", :_target=>"blank"} Portfolio
+                  %a{:href=>"#{service[:portfolio]}", :_target=>"blank"} Portfolio
